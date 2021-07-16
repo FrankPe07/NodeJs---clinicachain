@@ -1,0 +1,61 @@
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0C6CF2;">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#"><strong>CLINICACHAIN</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link text-white" href="#">Inicio</a>
+            <a class="nav-item nav-link text-white" href="#">Citas</a>
+            <a class="nav-item nav-link text-white" href="#">Grupo Familiar</a>
+            <a class="nav-item nav-link text-white" href="#">Especialistas</a>
+            <a class="nav-item nav-link text-white" href="#">About</a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse mx-auto">
+            <a class="nav-item nav-link text-white" href="#">Salir</a>
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-4">
+
+        <h3>Historia Clinica {{ historiaClinica.paciente_nombre }} {{historiaClinica.paciente_apellidos}}</h3>
+
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <p><strong>Datos Medicos: </strong> {{historiaClinica.medico_nombre}} {{historiaClinica.medico_apellidos}}</p>
+                <p><strong>Fecha: </strong> {{historiaClinica.fecha_cita}}</p>
+                <p><strong>Motivo: </strong> {{historiaClinica.motivo_consulta}}</p>
+                <p><strong>Ananmnesi: </strong> {{historiaClinica.anamnesis}}</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p><strong>Temperatura: </strong> {{historiaClinica.temperatura}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>Pulso: </strong> {{historiaClinica.pulso}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p><strong>FC: </strong> {{historiaClinica.fc}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>FR: </strong> {{historiaClinica.fr}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>PA: </strong> {{historiaClinica.pa}}</p>
+                    </div>
+                </div>
+                <p><strong>Diagnostico: </strong> {{historiaClinica.diagnostico}}</p>
+                <p><strong>Examen Clinico: </strong> {{historiaClinica.examen_clinico}}</p>
+                <p><strong>Tratamiento: </strong> {{historiaClinica.tratamiento}}</p>
+                <p><strong>Proxima Cita: </strong> {{historiaClinica.proxima_cita}}</p>
+            </div>
+        </div>
+
+    </div>
+
+

@@ -1,0 +1,20 @@
+
+<div class="container pt-5">
+    <h1>Historias Clinicas</h1>
+    <div class="row">
+        {{#each listHistorias}}
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><strong>{{ motivo_consulta }}</strong></h3>
+                        <h4><strong>Medico</strong>  {{ nombre }} {{ apellidos }}</h4>
+                        <h5><strong>Fecha</strong> {{ fecha }}</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/user/paciente/{{ id }}/{{ persona_id }}" class="btn btn-primary">Ver Bloque</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

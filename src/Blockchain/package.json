@@ -1,0 +1,16 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frave Developer",
+  "license": "ISC",
+  "dependencies": {
+    "fabric-ca-client": "^1.4.14",
+    "fabric-client": "^1.4.10",
+    "fabric-network": "^1.4.2"
+  }
+}
